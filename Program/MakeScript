@@ -1,0 +1,49 @@
+
+.PHONY : default_target
+
+# Allow only one "make -f Makefile2" at a time, but pass parallelism.
+.NOTPARALLEL:
+
+
+#=============================================================================
+# Special targets provided by cmake.
+
+# Disable implicit rules so canonical targets will work.
+.SUFFIXES:
+
+
+# Remove some rules from gmake that .SUFFIXES does not remove.
+SUFFIXES =
+
+.SUFFIXES: .hpux_make_needs_suffix_list
+
+
+--More--(12%)
+[5]+  Stopped                 more Makefile
+erald@erald:~/CI-CD/CI-CD$ clear
+
+erald@erald:~/CI-CD/CI-CD$ make
+Scanning dependencies of target Hello
+[ 50%] Building CXX object CMakeFiles/Hello.dir/HelloWorld.cpp.o
+[100%] Linking CXX executable Hello
+[100%] Built target Hello
+erald@erald:~/CI-CD/CI-CD$ ls
+ CMakeCache.txt       'Erald Dervishi Theoretical_ T1.pdf'   HelloWorld.o
+ CMakeFiles            Hello                                 Makefile
+ cmake_install.cmake   HelloWorld.a                          Program
+ CMakeLists.txt        HelloWorld.cpp
+erald@erald:~/CI-CD/CI-CD$ ls -l Hello
+-rwxr-xr-x 1 erald erald 8928 Jan  6 23:03 Hello
+erald@erald:~/CI-CD/CI-CD$ ./Hello
+Hello World!
+erald@erald:~/CI-CD/CI-CD$ 
+
+
+
+
+
+
+
+
+
+
