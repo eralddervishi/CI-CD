@@ -18,7 +18,7 @@ The second line is the project() command that sets the project name.
 The third line is the add_executable() command, which requests that an executable is to be built using the helloworld.cpp source file. 
 The first argument to the add_executable() function is the name of the executable to be built, and the second argument is the source file from which to build the executable.
 To build the project, first test that you have CMake installed, and if not, install it using the package manager that is used by your  Linux OS. 
------------------------
+
 This command installs cmake library in Linux
 :~/$ sudo apt-get install cmake
 -----------------------------------
