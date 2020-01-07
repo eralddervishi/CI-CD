@@ -6,10 +6,11 @@
 using namespace std;
 
 //This is where the execution of program begins
-int main()
+int main(int argc, char *argv[])
 {
    // displays Hello World! on screen
-   cout<<"Hello World!";
-
+   std::cout << "Hello World!" << std::endl;
    return 0;
 }
+
+
